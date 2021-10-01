@@ -6,10 +6,14 @@ input.onButtonPressed(Button.A, function () {
             dias += 1
         }
         basic.showNumber(cantidad_agua)
-        promedio += cantidad_agua / 1825
-        basic.showNumber(promedio)
-        basic.showNumber(dias)
     }
+})
+input.onButtonPressed(Button.AB, function () {
+    basic.showNumber(dias)
+})
+input.onButtonPressed(Button.B, function () {
+    promedio += cantidad_agua / 1825
+    basic.showNumber(promedio)
 })
 let dias = 0
 let promedio = 0
